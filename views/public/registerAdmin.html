@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Tourist website</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-title">Welcome to  <strong>your favourite tourist website</strong> </h1>
+            <p class="header-text bottom-text">Join us on our next vacation </p>
+        </header>
+    
+        <main class="main" id="main">
+            <div id="main-container">
+                <h2 class="main-title"><p></p> Signup!</p></h2>
+            </div>
+    
+           <form action ="/api/v1/auth/form" method="POST" class="form" id="form"  >
+                <input type="text" Name="firstName" id="myFirstName" placeholder="First Name" required>
+                <input type="text" Name="lastName" id="myLastName" placeholder="Last Name" required>
+                <input type="text" Name="email" id="myemail" placeholder="Email" required>
+                <input type="text" name="password" id="myPassword" placeholder="Password" required>
+                <button type="submit" class="btn" id="submit-btn">Start</button>
+            </form>
+            <p class="main-footer-text">(c) 2022 <br></p>
+        </main>
+    </div> <!--container for header and main-->
+
+    <script src="registerIndex.js"></script>
+
+
+</body>
+</html>

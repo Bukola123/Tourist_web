@@ -1,0 +1,236 @@
+/* =====================
+    GLOBAL STYLES 
+=======================*/
+:root {
+	font-size: 62.5%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.6rem;
+	color: #5a5a5a;
+}
+
+h1,
+h2,
+p {
+	margin-top: 80px;
+}
+
+/* =====================
+    HEADER SECTION
+=======================*/
+.container,
+.header {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.header {
+	background: #404040;
+	background-image: url("https://i.insider.com/5bfec49248eb12058423acf7?width=700");
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: multiply;
+	align-items: center;
+	min-height: 65vh;
+}
+
+.header-title {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 3.6rem;
+	max-width: 335px;
+}
+
+.header-text {
+	color: #f18119;
+	text-transform: uppercase;
+	font-size: 2.1rem;
+	font-weight: 900;
+	max-width: 306px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header-top-text {
+	order: -1;
+	border-top: 3px solid #f18119;
+	padding-top: 0.2em;
+	align-self: center;
+	letter-spacing: 1.5px;
+	font-size: 1rem;
+	border-image: linear-gradient(90deg, #ff713b, #ffa51d) 1;
+}
+
+.header-title,
+.bottom-text {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+/*====Media Queries for Header Section===*/
+@media (min-width: 700px) {
+	body {
+		font-size: 1.8rem;
+	}
+
+	.container {
+		flex-flow: row wrap;
+		justify-content: center;
+		min-height: 100vh;
+	}
+
+	.header {
+		width: 57.5%;
+		min-height: unset;
+		justify-content: center;
+	}
+
+	.header-title {
+		font-size: 5.6rem;
+		margin-bottom: 0.1em;
+		max-width: 492px;
+		align-self: center;
+	}
+
+	.bottom-text {
+		font-size: 2.8rem;
+		margin-bottom: auto;
+		max-width: 410px;
+	}
+
+	.header-top-text {
+		font-size: 1rem;
+		margin-bottom: auto;
+	}
+}
+
+/* =====================
+    MAIN SECTION
+=======================*/
+.main {
+	width: 90%;
+	margin: 2em auto;
+}
+
+.main-title {
+	color: #404040;
+	font-size: 2.1rem;
+	margin-bottom: 0;
+	font-weight: 900;
+}
+
+.main-sub-title {
+	color: #f18119;
+	font-weight: 900;
+	font-size: 1.6rem;
+}
+
+.main-text {
+	max-width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* MAIN-FORM SECTION */
+.main-title {
+	font-size: 2.8rem;
+}
+
+.form-pop-up {
+	font-weight: 400;
+	margin-bottom: 0.35em;
+}
+
+.pop-up-name {
+	color: #ffa51d;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.form {
+	display: flex;
+	flex-flow: column wrap;
+	max-width: 253px;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	font-size: inherit;
+	text-align: inherit;
+	padding: 0.4em;
+	border-radius: 8px;
+	border: 1px solid #443838;
+	margin-bottom: 0.75em;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid #f18119;
+}
+
+.btn {
+	display: block;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 900;
+	letter-spacing: 1.5px;
+	border: unset;
+	padding: 1.2em 0;
+	border-radius: 8px;
+	background-image: linear-gradient(90deg, #ff713b, #ffa51d);
+	transition: color 1s;
+	margin-bottom: 1em;
+}
+
+.btn:hover,
+.btn:focus {
+	color: black;
+	cursor: pointer;
+	outline: none;
+}
+
+.main-footer-text {
+	font-size: 1.2rem;
+}
+
+/*====Media Queries for Main Section===*/
+@media (min-width: 700px) {
+	.main {
+		width: 42.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1.2em;
+	}
+
+	.main-title {
+		font-size: 1.7rem;
+		text-align: center;
+	}
+
+	.main-sub-title {
+		margin-bottom: 2.5em;
+	}
+
+	.main-text,
+	.form {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.main-text {
+		max-width: 600px;
+	}
+}
